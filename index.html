@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKG - Premium Fashion Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="conatainer">
+        <div class="nabar" id="navbar">
+            <ul>
+                <div class="rigth-nav">
+                    <div class="rigth-nav-right">
+                        <li><a href="#">
+                                <h1>ⓈⓀⒼ</h1>
+                            </a></li>
+                    </div>
+                    <div class="rigth-nav-left">
+                        <li><a href="#products">EVERYTHING</a></li>
+                        <li><a href="#men">MEN</a></li>
+                        <li><a href="#women">WOMEN</a></li>
+                        <li><a href="#accessories">ACCESSORIES</a></li>
+                    </div>
+                </div>
+
+                <div class="left-nav">
+                    <ul>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                        <li><a href="#">
+                                <div class="serch">
+                                    <input type="search" id="search-bar" class="searchbar" placeholder="Search...">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+        <div class="textform">
+            <div class="top-text">
+                <h1>New Collection 2025</h1>
+                <p>Raining Offers For <span>Hot Summer!</span></p>
+            </div>
+            <div class="mid-text">
+                <h2>25% Off On All Products</h2>
+            </div>
+            <div class="btn">
+                <button onclick="animateButton(this)">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <button>Find More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="mid-page" id="products">
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="highlight">
+            <h1>SHOP BY CATEGORY</h1>
+        </div>
+        <div class="categories-section">
+            <div class="category-card" onclick="filterCategory('men')">
+                <div class="category-overlay"></div>
+                <img src="M1.jpg" alt="Men's Collection">
+                <div class="category-content">
+                    <h2>Men's</h2>
+                    <p>120+ Products</p>
+                    <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="category-card" onclick="filterCategory('women')">
+                <div class="category-overlay"></div>
+                <img src="M2.jpg" alt="Women's Collection">
+                <div class="category-content">
+                    <h2>Women's</h2>
+                    <p>150+ Products</p>
+                    <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="category-card" onclick="filterCategory('accessories')">
+                <div class="category-overlay"></div>
+                <img src="M3.jpg" alt="Accessories">
+                <div class="category-content">
+                    <h2>Accessories</h2>
+                    <p>80+ Products</p>
+                    <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h1>TRENDING NOW</h1>
+        </div>
+        <div class="mid-page-first">
+            <div class="mid-div">
+                <div class="border" onclick="addToCart('Premium Tank Top', 49.99)">
+                    <div class="sale-badge">20% OFF</div>
+                    <div class="mid-div-img">
+                        <img src="M1.jpg" alt="Premium Tank Top">
+                        <h1>Premium Tank Top</h1>
+                        <p>Experience ultimate comfort with our premium cotton blend tank top.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="border" onclick="addToCart('Designer T-Shirt', 59.99)">
+                    <div class="sale-badge">NEW</div>
+                    <div class="mid-div-img">
+                        <img src="M2.jpg" alt="Designer T-Shirt">
+                        <h1>Designer T-Shirt</h1>
+                        <p>Stand out with our exclusive designer collection t-shirts.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="border" onclick="addToCart('Casual Hoodie', 79.99)">
+                    <div class="sale-badge">HOT</div>
+                    <div class="mid-div-img">
+                        <img src="M3.jpg" alt="Casual Hoodie">
+                        <h1>Casual Hoodie</h1>
+                        <p>Stay cozy and stylish with our premium casual hoodies.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight" id="men">
+            <h1>BEST SELLERS</h1>
+        </div>
+
+        <div class="mid-page-first">
+            <div class="mid-div">
+                <div class="border" onclick="addToCart('Summer Collection', 69.99)">
+                    <div class="sale-badge">SALE</div>
+                    <div class="mid-div-img">
+                        <img src="M4.jpg" alt="Summer Collection">
+                        <h1>Summer Collection</h1>
+                        <p>Beat the heat with our breathable summer essentials.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="border" onclick="addToCart('Urban Style', 89.99)">
+                    <div class="sale-badge">LIMITED</div>
+                    <div class="mid-div-img">
+                        <img src="M5.jpg" alt="Urban Style">
+                        <h1>Urban Style</h1>
+                        <p>Embrace the city vibes with our urban streetwear collection.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="border" onclick="addToCart('Classic Fit', 54.99)">
+                    <div class="sale-badge">TRENDING</div>
+                    <div class="mid-div-img">
+                        <img src="M6.jpg" alt="Classic Fit">
+                        <h1>Classic Fit</h1>
+                        <p>Timeless designs that never go out of style.</p>
+                        <button class="mid-button"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offer Banner -->
+        <div class="special-offer">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <span class="offer-badge">Limited Time Offer</span>
+                    <h2>Summer Sale is Live! 🔥</h2>
+                    <p>Get up to 50% off on selected items. Don't miss out on these amazing deals!</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <button class="offer-btn" onclick="animateButton(this)">Shop Sale <i class="fa-solid fa-fire"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="highlight">
+            <h1>WHAT OUR CUSTOMERS SAY</h1>
+        </div>
+        <div class="testimonials-section">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Amazing quality! The fabric is so comfortable and the fit is perfect. Will definitely order again!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div class="author-info">
+                        <h4>John Doe</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Fast shipping and excellent customer service. The hoodie I bought exceeded my expectations!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah Miller</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="testimonial-text">"Love the modern designs! SKG has become my go-to store for trendy fashion. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MK</div>
+                    <div class="author-info">
+                        <h4>Mike Kumar</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get exclusive offers, new arrivals & 10% off your first order!</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Enter your email address" required id="newsletter-email">
+                    <button type="submit">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <div class="newsletter-features">
+                    <span><i class="fa-solid fa-check"></i> No spam, ever</span>
+                    <span><i class="fa-solid fa-check"></i> Exclusive deals</span>
+                    <span><i class="fa-solid fa-check"></i> Unsubscribe anytime</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Feed Section -->
+        <div class="highlight">
+            <h1>FOLLOW US @SKGFASHION</h1>
+        </div>
+        <div class="instagram-section">
+            <div class="insta-item">
+                <img src="M1.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="M2.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="M3.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="M4.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="M5.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="M6.jpg" alt="Instagram Post">
+                <div class="insta-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Partners -->
+        <div class="brands-section">
+            <div class="brand-item">
+                <i class="fa-brands fa-nike"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fa-brands fa-adidas"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fa-brands fa-amazon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SKG</h3>
+                <p style="color: rgba(255,255,255,0.7); max-width: 300px; line-height: 1.8;">
+                    Premium fashion destination for the modern individual. Quality meets style in every piece we create.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:info@skg.com"><i class="fa-solid fa-envelope"></i> info@skg.com</a></li>
+                    <li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +1 234 567 890</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> New York, USA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SKG Fashion. All Rights Reserved. Made with <i class="fa-solid fa-heart" style="color: #ff6b6b;"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
